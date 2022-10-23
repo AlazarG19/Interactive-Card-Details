@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image-background-container {
+    position: relative;
+
+}
+
+.image-background-mobile {
+    display: none;
+}
+
+body {
+    --White: hsl(0, 0%, 100%);
+    --Lightgrayishviolet: hsl(270, 3%, 87%);
+    --Darkgrayishviolet: hsl(279, 6%, 55%);
+    --Verydarkviolet: hsl(278, 68%, 11%);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card-container {
+    padding-bottom: 175px;
+    min-height: 100vh;
+}
+
+.image-background {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 35.2vw;
+}
+
+.form {
+    z-index: 2;
+}
+
+.card-front {
+    position: absolute;
+    top: 13.7vw;
+    left: 12vw;
+}
+
+
+.card-front-content {
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+}
+
+.image-front {
+    z-index: 10;
+}
+
+.circle {
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    width: 45px;
+    height: 45px;
+    background: var(--Lightgrayishviolet);
+    border-radius: 50%;
+}
+
+.smaller-circle {
+    position: absolute;
+    top: 45px;
+    left: 95px;
+    width: 20px;
+    height: 20px;
+    /* background: blue; */
+    border: 1px solid var(--Lightgrayishviolet);
+    border-radius: 50%;
+}
+
+.card-front-number {
+    position: absolute;
+    top: 135px;
+    font-size: 31px;
+    left: 26px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+
+.card-front-name {
+    position: absolute;
+    top: 200px;
+    font-size: 14px;
+    left: 32px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.card-front-number2 {
+    position: absolute;
+    top: 200px;
+    font-size: 14px;
+    left: 360px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.card-back {
+    position: absolute;
+    top: 34.4vw;
+    left: 19vw;
+    z-index: -1;
+}
+
+.card-back-number {
+    position: absolute;
+    top: 110px;
+    left: 353px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.form {
+    margin-left: 50vw;
+    padding: 11vw;
+    padding-top: 274px;
+}
+
+.form>div {
+    margin-bottom: 24px;
+}
+
+input {
+    padding: 13px;
+    width: 26vw;
+    border-radius: 5px;
+    border: 1px solid var(--Lightgrayishviolet);
+    margin-top: 5px;
+}
+
+input::placeholder {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: var(--Darkgrayishviolet);
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.datewithcvc {
+    display: flex;
+    flex-direction: row;
+}
+
+.monthinput,
+.yearinput {
+    width: 48px;
+    margin-left: 5px;
+}
+
+.date {
+    margin-right: 30px;
+}
+
+.cvcinput {
+    width: 8vw;
+}
+
+.cvc {
+    /* margin-top: 5px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.dateinputcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 17px;
+    padding: 15px;
+    width: 28vw;
+    letter-spacing: 0.6px;
+    border-radius: 10px;
+    font-size: 17px;
+    border: 0;
+    background: var(--Verydarkviolet);
+    color: white;
+}
+
+.completeimage {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+    padding-bottom: 10px;
+}
+
+.thankyou {
+    /* padding-top: px; */
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--Verydarkviolet);
+}
+
+.thankyoudetail {
+    font-size: 17px;
+    text-align: center;
+    color: var(--Darkgrayishviolet);
+    letter-spacing: 1px;
+}
+
+@media (max-width : 1075px) {
+    .card-front {
+        left: 1vw;
+    }
+
+    .card-back {
+        left: 8vw;
+    }
+}
+
+@media (max-width : 860px) {
+    .image-background {
+        display: none;
+    }
+
+    .image-background-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .card-container {
+        padding-bottom: 0;
+    }
+
+    .card-front {
+        position: absolute;
+        top: 33.5vw;
+        left: 4.2vw;
+        z-index: 10;
+    }
+
+
+    .card-front-content {
+        color: white;
+        position: absolute;
+        top: 0;
+        z-index: 50;
+    }
+
+    .image-front {
+        width: 76.5vw;
+    }
+
+    .circle {
+        top: 5.3vw;
+        left: 5.6vw;
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .smaller-circle {
+        top: 7vw;
+        left: 15.7vw;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .card-front-number {
+        top: 22.8vw;
+        left: 5.1vw;
+        font-size: 5vw;
+    }
+
+    .card-front-name {
+        top: 33.5vw;
+        left: 5.1vw;
+        font-size: 2.1vw;
+    }
+
+    .card-front-number2 {
+        top: 33.5vw;
+        left: 62.1vw;
+        font-size: 2.1vw;
+    }
+
+    .image-back {
+        width: 76.5vw;
+    }
+
+    .card-back {
+        position: absolute;
+        top: 8.5vw;
+        left: 19.5vw;
+        z-index: 5;
+    }
+
+    .card-back-number {
+        top: 19.5vw;
+        left: 61.1vw;
+        font-size: 2.6vw;
+    }
+
+    .form {
+        padding-top: 14vw;
+        padding-left: 6vw;
+        margin-left: 0;
+    }
+
+    .form>div {
+        margin-bottom: -12px;
+    }
+
+    input {
+        padding: 13px;
+        width: 80vw;
+        border-radius: 5px;
+        border: 1px solid var(--Lightgrayishviolet);
+        margin-top: 5px;
+    }
+
+    .form-control {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .cvc {
+        margin-top: 35px;
+    }
+
+    .cvcinput {
+        width: 33vw;
+    }
+
+    .date {
+        margin-right: 2vw;
+    }
+
+    .button {
+        font-family: 'Space Grotesk', sans-serif;
+        margin-top: 34.5px;
+        padding: 15px;
+        width: 87vw;
+    }
+
+    .thankyou {
+        padding-top: 10.5vw;
+        font-size: 7.5vw;
+    }
+
+    .thankyoudetail {
+        padding-top: 8.7vw;
+        font-size: 4.2vw;
+        padding-bottom: 7vw;
+    }
+
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formvalidation.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body></body>
+<div class="image-background-container">
+    <img src="./images/bg-main-desktop.png" class="image-background" alt="" srcset="">
+    <img src="./images/bg-main-mobile.png" class="image-background-mobile" alt="" srcset="">
+    <div class="card-container col-6">
+        <div class="card-front">
+            <img src="./images/bg-card-front.png" class="image-front" alt="" srcset="">
+            <div class="card-front-content">
+                <div class="circle">
+
+                </div>
+                <div class="smaller-circle">
+
+                </div>
+                <div class="card-front-number">
+                    0000 0000 0000 0000
+                </div>
+                <div class="card-front-name">
+                    Jane Appleseed
+                </div>
+                <div class="card-front-number2">
+                    00/00
+                </div>
+            </div>
+        </div>
+        <div class="card-back">
+            <img src="./images/bg-card-back.png" class="image-back" alt="" srcset="">
+            <div class="card-back-content">
+                <div class="card-back-number">
+                    000
+                </div>
+            </div>
+        </div>
+        <form action="" class="form col-6">
+            <div data-class="name" class="name standard_input form-control">
+                <label for="" class="namelabel">cardholder name</label>
+                <input placeholder="e.g. Jane Appleseed" type="text" class="nameinput">
+                <small>Error message</small>
+            </div>
+            <div data-class="number" class="number standard_input form-control">
+                <label for="" class=" numberlabel">card number</label>
+                <input placeholder="e.g. 1234 6789 9123 0000" type="text" class="numberinput">
+                <small>Error message</small>
+
+            </div>
+            <div class="datewithcvc">
+                <div data-class="date" class="date standard_input form-control">
+                    <label for="" class='datelabel'>exp. date(mm/yy)</label>
+                    <div class="dateinputcontainer">
+                        <input placeholder="MM" type="text" class="monthinput">
+                        <input placeholder="YY" type="text" class="yearinput">
+
+                    </div>
+                    <small>Error message</small>
+                </div>
+                <div data-class="cvc" class="cvc standard_input form-control">
+                    <label for="" class='cvclabel'>cvc</label>
+                    <input placeholder="e.g. 123" type="text" class="cvcinput">
+                    <small>Error message</small>
+                </div>
+            </div>
+            <div class="buttoncontainer">
+                <button class="button">Confirm</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
